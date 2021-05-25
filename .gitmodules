@@ -1,0 +1,9 @@
+[submodule "azure/libyggdrasil"]
+	path = azure/libyggdrasil
+	url = https://gitlab.ti.bfh.ch/yggdrasil/libyggdrasil
+[submodule "gameboy_emulator/libyggdrasil"]
+	path = gameboy_emulator/libyggdrasil
+	url = https://gitlab.ti.bfh.ch/yggdrasil/libyggdrasil
+[submodule "mandelbrot/libyggdrasil"]
+	path = mandelbrot/libyggdrasil
+	url = https://gitlab.ti.bfh.ch/yggdrasil/libyggdrasil
