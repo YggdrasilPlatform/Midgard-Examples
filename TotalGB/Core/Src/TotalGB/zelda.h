@@ -1,0 +1,1 @@
+extern "C" const unsigned char zelda_rom_data[524288];
