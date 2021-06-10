@@ -7,3 +7,6 @@
 [submodule "Mandelbrot_Julia/libyggdrasil"]
 	path = Mandelbrot_Julia/libyggdrasil
 	url = https://gitlab.ti.bfh.ch/yggdrasil/libyggdrasil
+[submodule "Hardware_Test/libyggdrasil"]
+	path = Hardware_Test/libyggdrasil
+	url = https://gitlab.ti.bfh.ch/yggdrasil/libyggdrasil
