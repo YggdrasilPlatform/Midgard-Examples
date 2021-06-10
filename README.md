@@ -20,7 +20,7 @@ LED B: Julia start position mode is on
 
 ## TotalGB
 
-Gameboy / Gameboy Color emulator. By default Super Mario Land 2 is loaded, however other ROMs are available in the repo and can be changed in `simple_main.cpp`.
+Gameboy / Gameboy Color emulator [TotalGB](https://github.com/ITotalJustice/TotalGB). By default Super Mario Land 2 is loaded, however other ROMs are available in the repo and can be changed in `simple_main.cpp`.
 
 ### Available ROMs
 
