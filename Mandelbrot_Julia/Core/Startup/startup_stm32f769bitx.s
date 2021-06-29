@@ -110,7 +110,7 @@ LoopFillZerobss:
 */
     .section  .text.Default_Handler,"ax",%progbits
 Default_Handler:
-	b handleInterrupts
+	b .
 
   .size  Default_Handler, .-Default_Handler
 /******************************************************************************
