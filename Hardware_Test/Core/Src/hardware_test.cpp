@@ -223,6 +223,7 @@ extern "C" void hardware_test() {
 
 				snprintf(buffer.data(), buffer.size(), "Joystick pos y: %d / 80", data.pos.y);
 				Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+				Display::drawString(5, 50 + 21 * 4, "Press B to skip", drv::Color::White, Font20);
 				core::delay(100);
 			}  while(check(10, data.pos.y >= 80));
 
@@ -236,6 +237,7 @@ extern "C" void hardware_test() {
 
 				snprintf(buffer.data(), buffer.size(), "Joystick pos y: %d / -80", data.pos.y);
 				Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+				Display::drawString(5, 50 + 21 * 4, "Press B to skip", drv::Color::White, Font20);
 				core::delay(100);
 			}  while(check(11, data.pos.y <= -80));
 
@@ -249,6 +251,7 @@ extern "C" void hardware_test() {
 
 				snprintf(buffer.data(), buffer.size(), "Joystick pos x: %d / 80", data.pos.x);
 				Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+				Display::drawString(5, 50 + 21 * 4, "Press B to skip", drv::Color::White, Font20);
 				core::delay(100);
 			}  while(check(12, data.pos.x >= 80));
 
@@ -262,6 +265,7 @@ extern "C" void hardware_test() {
 
 				snprintf(buffer.data(), buffer.size(), "Joystick pos x: %d / -80", data.pos.x);
 				Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+				Display::drawString(5, 50 + 21 * 4, "Press B to skip", drv::Color::White, Font20);
 				core::delay(100);
 			}  while(check(13, data.pos.x <= -80));
 
@@ -288,6 +292,7 @@ extern "C" void hardware_test() {
 
 				snprintf(buffer.data(), buffer.size(), "Joystick pos y: %d / 80", data.pos.y);
 				Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+				Display::drawString(5, 50 + 21 * 4, "Press B to skip", drv::Color::White, Font20);
 				core::delay(100);
 			}  while(check(15, data.pos.y >= 80));
 
@@ -301,6 +306,7 @@ extern "C" void hardware_test() {
 
 				snprintf(buffer.data(), buffer.size(), "Joystick pos y: %d / -80", data.pos.y);
 				Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+				Display::drawString(5, 50 + 21 * 4, "Press B to skip", drv::Color::White, Font20);
 				core::delay(100);
 			}  while(check(16, data.pos.y <= -80));
 
@@ -314,6 +320,7 @@ extern "C" void hardware_test() {
 
 				snprintf(buffer.data(), buffer.size(), "Joystick pos x: %d / 80", data.pos.x);
 				Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+				Display::drawString(5, 50 + 21 * 4, "Press B to skip", drv::Color::White, Font20);
 				core::delay(100);
 			}  while(check(17, data.pos.x >= 80));
 
@@ -327,6 +334,7 @@ extern "C" void hardware_test() {
 
 				snprintf(buffer.data(), buffer.size(), "Joystick pos x: %d / -80", data.pos.x);
 				Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+				Display::drawString(5, 50 + 21 * 4, "Press B to skip", drv::Color::White, Font20);
 				core::delay(100);
 			}  while(check(18, data.pos.x <= -80));
 
@@ -351,6 +359,8 @@ extern "C" void hardware_test() {
 
 			snprintf(buffer.data(), buffer.size(), "Value: %04X", randomData);
 			Display::drawString(5, 50 + 21 * 2, buffer.c_str(), drv::Color::White, Font20);
+			Display::drawString(5, 50 + 21 * 4, "Press A to confirm", drv::Color::White, Font20);
+			Display::drawString(5, 50 + 21 * 5, "Press B to skip", drv::Color::White, Font20);
 
 			do{
 				SevenSegment::setHexadecimal(randomData);
@@ -428,7 +438,7 @@ extern "C" void hardware_test() {
 
 		}
 
-		Display::drawString(250, 50 + 21 * 34, "Press Button A to see the fonts", drv::Color::White, Font20);
+		Display::drawString(5, 50 + 21 * 34, "Press Button A to see the fonts", drv::Color::White, Font20);
 		while(!ButtonA);
 
 
