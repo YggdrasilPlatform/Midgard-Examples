@@ -103,7 +103,6 @@ static void poll_input() {
 }
 
 int simple_main() {
-	bsp::Display::init();
 	bsp::Display::turnOn();
 
 	std::array<uint32_t, 0x100> palette_array = { 0xFFF7E7C6, 0xFFD68E49, 0xFFA63725, 0xFF331E50, 0xFF000000 };

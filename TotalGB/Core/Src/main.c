@@ -39,6 +39,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <yggdrasil.h>
 #include "TotalGB/simple_main.h"
 /* USER CODE END Includes */
 
@@ -144,6 +145,8 @@ int main(void)
   MX_LTDC_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+  yggdrasil_init();
+
   simple_main();
   /* USER CODE END 2 */
 

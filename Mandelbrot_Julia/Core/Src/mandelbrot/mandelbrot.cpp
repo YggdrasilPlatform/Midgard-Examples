@@ -11,7 +11,6 @@ struct PaletteInformation {
 
 extern "C" void mandelbrot_main() {
 
-	bsp::Display::init();
 	bsp::Display::turnOn();
 	bsp::Display::clear(0);
 
@@ -91,8 +90,6 @@ extern "C" void mandelbrot_main() {
 	double juliaY = 0;
 
 	bsp::ygg::prph::Joystick::setDeadzone(20);
-
-	bsp::ygg::prph::SixAxisSensor::init();
 
 	bsp::Encoder.init();
 	bsp::Encoder.enable();

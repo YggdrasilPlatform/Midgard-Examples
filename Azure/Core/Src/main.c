@@ -39,6 +39,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <yggdrasil.h>
+
 #include <stdio.h>
 #include <tx_api.h>
 /* USER CODE END Includes */
@@ -145,6 +147,8 @@ int main(void)
   MX_LTDC_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+  yggdrasil_init();
+
   tx_kernel_enter();
   /* USER CODE END 2 */
 

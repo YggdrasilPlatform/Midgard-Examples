@@ -143,7 +143,7 @@ int main(void)
   MX_DSIHOST_DSI_Init();
   MX_LTDC_Init();
   MX_TIM2_Init();
-  /* USER CODE BEGIN 2 */
+  /* USER CODE BEGIN 2 */  
   hardware_test();
   /* USER CODE END 2 */
 
